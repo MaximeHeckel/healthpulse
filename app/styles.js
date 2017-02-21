@@ -1,0 +1,70 @@
+export default css = {
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ECECF4',
+  },
+  textContainer: {
+    alignItems: 'flex-start',
+  },
+  mainTitle: {
+    fontSize: 36,
+    textAlign: 'left',
+    margin: 10,
+    marginTop: 0,
+    color: '#050505',
+    fontWeight: '700',
+  },
+
+  update: {
+    textAlign: 'center',
+    color: '#050505',
+    fontWeight: '700',
+    marginBottom: 5,
+    marginTop: 30,
+  },
+  instructions: {
+    marginTop: 30,
+    maxWidth: 300,
+    textAlign: 'left',
+    color: '#050505',
+    paddingBottom: 20,
+  },
+  inputWrapper: {
+    marginTop: 5,
+    borderBottomWidth: 2,
+    borderBottomColor: '#F45B69',
+  },
+  input: {
+    height: 50,
+    color: '#F45B69',
+    width: 300,
+    paddingLeft: 5,
+    fontSize: 20,
+    fontWeight: '700',
+  },
+  buttonContainer: {
+    height: 75,
+    width: 300,
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+  },
+  button: {
+    backgroundColor: '#F45B69',
+    borderStyle: 'solid',
+    borderWidth: 1,
+    borderColor: '#F45B69',
+    borderRadius: 3,
+    height: 55,
+    width: 300,
+    position: 'absolute',
+    bottom: 0,
+  },
+  buttonInside: {
+    textAlign: 'center',
+    color: 'white',
+    fontWeight: "700",
+    lineHeight: 50,
+  },
+};
