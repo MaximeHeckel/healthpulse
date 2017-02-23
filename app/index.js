@@ -68,7 +68,6 @@ export default class healthPulse extends Component {
       }
     });
 
-
     BackgroundFetch.configure({
       stopOnTerminate: false
     }, function() {
@@ -146,7 +145,7 @@ export default class healthPulse extends Component {
               this.setState(initialState);
             }
 
-            return this.setState({ updateTime: moment().format('hh:mm:ss a') }, currentDate);
+            return this.setState({ updateTime: moment().format('hh:mm:ss a'), currentDate });
           }).catch((error) => {
             BackgroundFetch.finish();  
             AlertIOS.alert('Error', `An error occured while pushing the data: ${error}`);
