@@ -141,6 +141,11 @@ export default class healthPulse extends Component {
               AlertIOS.alert('Error', `HTTP error: ${data.status}`);
               return;
             }
+
+            if (moment().diff(this.state.currentDate, 'days') > 0) {
+              this.setState(initialState);
+            }
+
             return this.setState({ updateTime: moment().format('hh:mm:ss a') }, currentDate);
           }).catch((error) => {
             BackgroundFetch.finish();  
